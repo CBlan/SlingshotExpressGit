@@ -57,6 +57,7 @@ public class ScoreManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
 
         playerDeathCount++;
+        GameManager.GM.googleAnalytics.LogEvent("Player Events", "Player Death", "Death", 1);
         score -= points;
         scoreText.text = score.ToString();
 
@@ -87,6 +88,7 @@ public class ScoreManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
 
         score += points;
+        GameManager.GM.googleAnalytics.LogEvent("Player Events", "Player Score", "Packages Delivered", 1);
         scoreText.text = score.ToString();
 
         retryPanel.SetActive(true);

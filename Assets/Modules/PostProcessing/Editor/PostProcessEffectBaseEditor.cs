@@ -103,8 +103,8 @@ namespace UnityEditor.Rendering.PostProcessing
             if (string.IsNullOrEmpty(title.tooltip))
             {
                 var tooltipAttr = property.GetAttribute<TooltipAttribute>();
-                if (tooltipAttr != null)
-                    title.tooltip = tooltipAttr.tooltip;
+                //if (tooltipAttr != null)
+                    //title.tooltip = tooltipAttr.tooltip;
             }
 
             // Look for a compatible attribute decorator

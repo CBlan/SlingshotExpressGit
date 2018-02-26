@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public SoundManager soundManager;
     public LevelManager levelManager;
     public PauseManager pauseManager;
+    public GoogleAnalyticsV4 googleAnalytics;
 
     public GameObject playerPrefab;
     public GameObject player;
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        googleAnalytics.StartSession();
         GM = this;
         soundManager.PlaySoundLoop(backgroundMusic, transform.position);
     }
