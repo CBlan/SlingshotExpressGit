@@ -2136,16 +2136,20 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114192085538073296, guid: d312bb81fd5ae924593bf1f5407b9a47,
-        type: 2}
-      propertyPath: zoomPoint
-      value: 
-      objectReference: {fileID: 1517513993}
     - target: {fileID: 114336457004749196, guid: d312bb81fd5ae924593bf1f5407b9a47,
         type: 2}
       propertyPath: slingMiddle
       value: 
       objectReference: {fileID: 2090634690}
+    - target: {fileID: 114192085538073296, guid: d312bb81fd5ae924593bf1f5407b9a47,
+        type: 2}
+      propertyPath: zoomPoint
+      value: 
+      objectReference: {fileID: 1517513993}
+    - target: {fileID: 1286536355091710, guid: d312bb81fd5ae924593bf1f5407b9a47, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d312bb81fd5ae924593bf1f5407b9a47, type: 2}
   m_IsPrefabParent: 0
