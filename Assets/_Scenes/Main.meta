@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/UI.meta
 guid: 6c79a5ab4e97e18478e050b05f79cd70
 folderAsset: yes
 timeCreated: 1519607942
+=======
+guid: 03ab89615d411d0438e9e1a5e6a9d65c
+folderAsset: yes
+timeCreated: 1519608960
+>>>>>>> 5595783ed923c42690d160299bc009ce9201bac7:Assets/_Scenes/Main.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
