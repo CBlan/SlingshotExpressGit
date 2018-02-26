@@ -41,6 +41,14 @@ public class ScoreManager : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
+
+        if (targetsHit == targetsToHit)
+        {
+            firedPanel.SetActive(false);
+            goodJobPanel.SetActive(true);
+            Finish();
+            print("Passed Level");
+        }
     }
 
     public void FailedTask(int points)
