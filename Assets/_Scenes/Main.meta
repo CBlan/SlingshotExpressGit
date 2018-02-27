@@ -1,8 +1,25 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2e625c2573005654781671b636f5d4ae
 folderAsset: yes
 timeCreated: 1519692511
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+guid: 85f21383f08b7f4468cad6d84cb76b06
+folderAsset: yes
+timeCreated: 1519679053
+=======
+guid: 2e625c2573005654781671b636f5d4ae
+folderAsset: yes
+timeCreated: 1519692511
+>>>>>>> delete meta files
+>>>>>>> test_cleanup
 licenseType: Free
+=======
+guid: 43c0906825c30ff48bebf57df08d093c
+folderAsset: yes
+>>>>>>> Revert "delete meta files"
 DefaultImporter:
   externalObjects: {}
   userData: 

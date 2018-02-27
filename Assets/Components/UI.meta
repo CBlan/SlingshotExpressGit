@@ -1,7 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Components/UI.meta
 guid: 2b982c34b67f9b444bfd5cafffca0041
+=======
+guid: 6c79a5ab4e97e18478e050b05f79cd70
+>>>>>>> Lights:Assets/UI.meta
 folderAsset: yes
-timeCreated: 1519344203
+timeCreated: 1519607942
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
