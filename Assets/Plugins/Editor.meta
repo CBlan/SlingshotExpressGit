@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 09d3c4338ba2b43a8914984456701910
 folderAsset: yes
 timeCreated: 1508783155
 licenseType: Pro
+=======
+guid: d02059ce050dbcf4e8470fd85efafcb0
+folderAsset: yes
+timeCreated: 1519690512
+licenseType: Free
+>>>>>>> Revert "delete meta files"
 DefaultImporter:
   externalObjects: {}
   userData: 
