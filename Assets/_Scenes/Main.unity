@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000002, guid: d31eb29712e38404091a00f6d2a5f4d6,
+  m_LightingDataAsset: {fileID: 112000002, guid: 02a00e7fa5146aa4fa15a5771d1ab3f3,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -4626,73 +4626,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bea64fff2fa56b44c8d09c9e860d159c, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1364918737
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1884916466}
-    m_Modifications:
-    - target: {fileID: 497732, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 497732, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 497732, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 497732, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 497732, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 497732, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 497732, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 497732, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114448813081680560, guid: eedce375080544b7fb3f03b742e2c9e9,
-        type: 2}
-      propertyPath: androidTrackingCode
-      value: UA-114824195-1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114448813081680560, guid: eedce375080544b7fb3f03b742e2c9e9,
-        type: 2}
-      propertyPath: IOSTrackingCode
-      value: UA-114824195-1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114448813081680560, guid: eedce375080544b7fb3f03b742e2c9e9,
-        type: 2}
-      propertyPath: otherTrackingCode
-      value: UA-114824195-1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114448813081680560, guid: eedce375080544b7fb3f03b742e2c9e9,
-        type: 2}
-      propertyPath: productName
-      value: SlignshotExpress
-      objectReference: {fileID: 0}
-    - target: {fileID: 114448813081680560, guid: eedce375080544b7fb3f03b742e2c9e9,
-        type: 2}
-      propertyPath: sendLaunchEvent
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1375866862 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4216178099783134, guid: 211eae4432a688e44a24b50021483b77,
@@ -5309,16 +5242,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8562717, y: 27.44297, z: 10.1400585}
   m_Center: {x: 7.1468687, y: -1.4166703, z: 0}
---- !u!4 &1666356173 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 497732, guid: eedce375080544b7fb3f03b742e2c9e9, type: 2}
-  m_PrefabInternal: {fileID: 1364918737}
---- !u!114 &1666356174 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114448813081680560, guid: eedce375080544b7fb3f03b742e2c9e9,
-    type: 2}
-  m_PrefabInternal: {fileID: 1364918737}
-  m_Script: {fileID: 11500000, guid: aa336ff3365034234845848b54bfee17, type: 3}
 --- !u!1 &1667830191
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,7 +5981,6 @@ Transform:
   - {fileID: 861619817}
   - {fileID: 1094113705}
   - {fileID: 449225303}
-  - {fileID: 1666356173}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6077,7 +5999,7 @@ MonoBehaviour:
   soundManager: {fileID: 861619816}
   levelManager: {fileID: 1094113704}
   pauseManager: {fileID: 449225302}
-  googleAnalytics: {fileID: 1666356174}
+  googleAnalytics: {fileID: 0}
   playerPrefab: {fileID: 1103105737457464, guid: d312bb81fd5ae924593bf1f5407b9a47,
     type: 2}
   player: {fileID: 0}

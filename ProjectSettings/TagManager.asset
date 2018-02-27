@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Package
   - Target
+  - GA
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 114448813081680560}
   m_Layer: 0
   m_Name: GAv4
-  m_TagString: Untagged
+  m_TagString: GA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

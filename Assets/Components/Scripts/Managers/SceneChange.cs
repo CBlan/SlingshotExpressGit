@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour {
 
-	
+    private GoogleAnalyticsV4 googleAnalytics;
+
     public void ChangeScene(string name)
     {
+        googleAnalytics = GameObject.FindGameObjectsWithTag("GA")[0].GetComponent<GoogleAnalyticsV4>();
         SceneManager.LoadScene(name);
-        //GameManager.GM.googleAnalytics.LogScreen(name);
+        googleAnalytics.LogScreen(name);
     }
 }

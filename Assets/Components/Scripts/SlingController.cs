@@ -122,7 +122,7 @@ public class SlingController : MonoBehaviour
                 StopCoroutine("ThrowPower");
                 ThrowPackage();
                 //Throw package
-                canThrow = false;
+                //canThrow = false;
             }
         }
 

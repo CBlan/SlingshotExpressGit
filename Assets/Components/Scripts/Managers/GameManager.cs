@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+
+        googleAnalytics = GameObject.FindGameObjectsWithTag("GA")[0].GetComponent<GoogleAnalyticsV4>();
         googleAnalytics.StartSession();
         GM = this;
         soundManager.PlaySoundLoop(backgroundMusic, transform.position);
