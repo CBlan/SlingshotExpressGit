@@ -9,6 +9,6 @@ public class SceneChange : MonoBehaviour {
     public void ChangeScene(string name)
     {
         SceneManager.LoadScene(name);
-        GameManager.GM.googleAnalytics.LogScreen(name);
+        //GameManager.GM.googleAnalytics.LogScreen(name);
     }
 }
