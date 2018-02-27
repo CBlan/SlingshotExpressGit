@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 85f21383f08b7f4468cad6d84cb76b06
 folderAsset: yes
 timeCreated: 1519679053
+=======
+guid: 2e625c2573005654781671b636f5d4ae
+folderAsset: yes
+timeCreated: 1519692511
+>>>>>>> delete meta files
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
