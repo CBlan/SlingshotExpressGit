@@ -13,4 +13,9 @@ public class SceneChange : MonoBehaviour {
         SceneManager.LoadScene(name);
         googleAnalytics.LogScreen(name);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
