@@ -3598,7 +3598,7 @@ Prefab:
     - target: {fileID: 114557897587064890, guid: d312bb81fd5ae924593bf1f5407b9a47,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114192085538073296, guid: d312bb81fd5ae924593bf1f5407b9a47,
         type: 2}
@@ -6454,6 +6454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1884916466}
   - component: {fileID: 1884916467}
+  - component: {fileID: 1884916468}
   m_Layer: 0
   m_Name: GM
   m_TagString: Untagged
@@ -6498,6 +6499,21 @@ MonoBehaviour:
     type: 2}
   player: {fileID: 0}
   backgroundMusic: {fileID: 8300000, guid: 8ed49915ee5af1e4ba87a4cef72c2d3a, type: 3}
+--- !u!114 &1884916468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1884916465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 166492960f648564c92501b7cca3122e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomWidth: 0
+  CustomHeight: 0
+  rezMultiplyer: 1
+  myCamera: {fileID: 0}
 --- !u!1 &1919298968
 GameObject:
   m_ObjectHideFlags: 0

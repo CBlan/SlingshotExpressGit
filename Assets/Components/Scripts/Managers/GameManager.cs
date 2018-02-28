@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject playerPrefab;
     public GameObject player;
 
+    //public Camera cam;
+
     public static GameManager GM;
 
     public AudioClip backgroundMusic;
@@ -25,6 +27,9 @@ public class GameManager : MonoBehaviour
         googleAnalytics.StartSession();
         GM = this;
         soundManager.PlaySoundLoop(backgroundMusic, transform.position);
+        player = GameObject.FindGameObjectWithTag("Player");
+        //cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+
     }
 
     public void SceneChange(string scene)
@@ -50,6 +55,7 @@ public class GameManager : MonoBehaviour
         playerCopy.GetComponent<SlingController>().slingMiddle = levelManager.slingMid;
         playerCopy.GetComponentInChildren<CameraController>().zoomPoint = levelManager.zoom;
         player = playerCopy;
+        //cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 
         scoreManager.DeactivateUI();
     }

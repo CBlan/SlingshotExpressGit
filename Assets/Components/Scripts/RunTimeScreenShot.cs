@@ -5,16 +5,15 @@ using UnityEngine.UI;
 
 public class RunTimeScreenShot : MonoBehaviour
 {
-    public InputField inputWidth;
-    public InputField inputHeight;
+    public int CustomWidth;
+    public int CustomHeight;
 
-    int resWidth = Screen.width * 4;
-    int resHeight = Screen.height * 4;
+    public int rezMultiplyer = 1;
+
+    int resWidth;
+    int resHeight;
 
     public Camera myCamera;
-    int scale = 1;
-
-    public GameObject[] nonRenderables;
 
     string path = "";
     RenderTexture renderTexture;
@@ -25,6 +24,26 @@ public class RunTimeScreenShot : MonoBehaviour
     {
         myCamera = Camera.main;
         path = Path.GetFullPath(".");
+
+        if(CustomWidth == 0 && CustomHeight == 0)
+        {
+            resWidth = Screen.width;
+            resHeight = Screen.height;
+        }
+        else
+        {
+            resWidth = CustomWidth;
+            resHeight = CustomHeight;
+        }
+    }
+
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Y))
+        {
+            myCamera = Camera.main;
+            TakeHiResShot();
+        }
     }
 
     public string ScreenShotName(int width, int height)
@@ -39,18 +58,8 @@ public class RunTimeScreenShot : MonoBehaviour
 
     public void TakeHiResShot()
     {
-        if (inputWidth.text != "")
-        {
-            resWidth = int.Parse(inputWidth.text);
-        }
-
-        if (inputHeight.text != "")
-        {
-            resHeight = int.Parse(inputHeight.text);
-        }
-
-        int resWidthN = resWidth * scale;
-        int resHeightN = resHeight * scale;
+        int resWidthN = resWidth * rezMultiplyer;
+        int resHeightN = resHeight * rezMultiplyer;
         RenderTexture rt = new RenderTexture(resWidthN, resHeightN, 24);
         myCamera.targetTexture = rt;
 
