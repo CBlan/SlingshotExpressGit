@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 15f272d3d0259924db3030ab4cc8a0d3
-timeCreated: 1519850706
+timeCreated: 1519861410
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -148,9 +148,9 @@ TextureImporter:
       name: options2
       rect:
         serializedVersion: 2
-        x: 1220
+        x: 1198
         y: 2617
-        width: 1226
+        width: 1248
         height: 460
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -162,13 +162,13 @@ TextureImporter:
       name: retry2
       rect:
         serializedVersion: 2
-        x: 208
-        y: 1706
-        width: 1051
-        height: 457
+        x: 233
+        y: 1718
+        width: 1029
+        height: 442
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 25}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -190,9 +190,9 @@ TextureImporter:
       name: controls2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 125
         y: 677
-        width: 1490
+        width: 1505
         height: 386
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -204,9 +204,9 @@ TextureImporter:
       name: quit2
       rect:
         serializedVersion: 2
-        x: 1610
+        x: 1616
         y: 905
-        width: 759
+        width: 768
         height: 421
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
