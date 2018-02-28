@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
 
     public void SceneChange(string scene)
     {
+
         SceneManager.LoadScene(scene);
     }
 
@@ -51,6 +52,11 @@ public class GameManager : MonoBehaviour
         player = playerCopy;
 
         scoreManager.DeactivateUI();
+    }
+
+    public void RetryGame()
+    {
+        googleAnalytics.LogEvent("Player Events", "Player Replayed", "Replay", 1);
     }
 
 }
