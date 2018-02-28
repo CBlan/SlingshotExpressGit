@@ -47,7 +47,7 @@ public class ScoreManager : MonoBehaviour
             firedPanel.SetActive(false);
             goodJobPanel.SetActive(true);
             Finish();
-            print("Passed Level");
+            //print("Passed Level");
         }
     }
 
@@ -120,7 +120,7 @@ public class ScoreManager : MonoBehaviour
 
     public void PackageDelivered()
     {
-        print("package delivered");
+        //print("package delivered");
         targetHitUI.gameObject.SetActive(true);
         StartCoroutine("Timer");
 
@@ -129,7 +129,7 @@ public class ScoreManager : MonoBehaviour
 
     IEnumerator Timer()
     {
-        print("timing");
+        //print("timing");
         yield return new WaitForSeconds(1);
         targetHitUI.gameObject.SetActive(false);
         yield break;

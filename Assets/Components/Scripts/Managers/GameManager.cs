@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetPlayer()
     {
-        print("Retry");
+        //print("Retry");
         Destroy(GameObject.FindGameObjectWithTag("Player"));
 
 
