@@ -43,10 +43,10 @@ public class CameraCollision : MonoBehaviour
             if (collision.gameObject.tag == "Target")
             {
                 playerCollision = true;
-                GameManager.GM.scoreManager.TargetHit(successsPoints);
+                //GameManager.GM.scoreManager.TargetHit(successsPoints);
                 if (gameObject.GetComponent<SlingController>().package != null)
                 {
-                    //GameManager.GM.scoreManager.TargetHit(successsPoints);
+                    GameManager.GM.scoreManager.TargetHit(successsPoints);
                     collision.gameObject.transform.parent.gameObject.SetActive(false);
                     GameManager.GM.scoreManager.PackageDelivered();
                 }
