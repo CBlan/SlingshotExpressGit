@@ -487,6 +487,7 @@ MonoBehaviour:
   deathCount: {fileID: 354094025}
   moneyMade: {fileID: 1457203447}
   scoreText: {fileID: 518038089}
+  earningsTxt: {fileID: 1847787664}
   score: 500
   targetsToHit: 6
   targetsHit: 0

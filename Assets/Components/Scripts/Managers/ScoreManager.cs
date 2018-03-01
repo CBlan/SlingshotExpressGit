@@ -22,6 +22,7 @@ public class ScoreManager : MonoBehaviour
 
     //scoring
     public Text scoreText;
+    public GameObject earningsTxt;
     public int score;
     bool success;
 
@@ -111,6 +112,7 @@ public class ScoreManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
 
         scoreText.gameObject.SetActive(false);
+        earningsTxt.SetActive(false);
         retryPanel.SetActive(false);
         resultsPanel.SetActive(true);
         packagesDelivered.text = "Packages Delivered: " + targetsHit.ToString() + "/" + targetsToHit.ToString();
