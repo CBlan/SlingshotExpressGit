@@ -17,8 +17,8 @@ public class SlingMove : MonoBehaviour
         }
 
 
-        if (!hasShot)
-        {
+        //if (!hasShot)
+        //{
             //var x = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
             var y = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
 
@@ -33,16 +33,16 @@ public class SlingMove : MonoBehaviour
             {
                 transform.position = new Vector3(transform.position.x, slingMaxUp, transform.position.z);
             }
-        }
+        //}
 
-        if (Input.GetButtonDown("Fire1"))
-        {
-            hasShot = true;
-        }
+        //if (Input.GetButtonDown("Fire1"))
+        //{
+        //    hasShot = true;
+        //}
 
-        if (Input.GetButtonUp("Fire1"))
-        {
-            hasShot = false;
-        }
+        //if (Input.GetButtonUp("Fire1"))
+        //{
+        //    hasShot = false;
+        //}
     }
 }
