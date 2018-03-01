@@ -6,13 +6,7 @@ public class TurnOnTick : MonoBehaviour {
 
     public GameObject colliders;
     public GameObject tick;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
-	// Update is called once per frame
 	void Update () {
 
 		if (!colliders.activeSelf)
