@@ -103,9 +103,9 @@ public class SlingController : MonoBehaviour
         if (fireing)
         {
             transform.Translate(0, 0, -slingPowerPerTime * Time.deltaTime);
-            if (transform.position.z < 11)
+            if (transform.position.z < 0)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y, 11);
+                transform.position = new Vector3(transform.position.x, transform.position.y, 0);
             }
         }
 
