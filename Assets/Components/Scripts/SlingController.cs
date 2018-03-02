@@ -32,12 +32,17 @@ public class SlingController : MonoBehaviour
     public GameObject airSpeedEffect;
     private GameObject airSpeed;
 
+    public float pullBackAmmount;
+    public Vector3 playerStartPos;
+    public Vector3 playerCurPos;
+
     void Start()
     {
         rB = GetComponent<Rigidbody>();
         m_Collider = GetComponent<Collider>();
         distToGround = m_Collider.bounds.extents.y;
         //slingMiddle = GameManager.GM.levelManager.slingMid;
+        playerStartPos = transform.position;
 
         if (GameManager.GM != null)
         {
@@ -103,10 +108,16 @@ public class SlingController : MonoBehaviour
         if (fireing)
         {
             transform.Translate(0, 0, -slingPowerPerTime * Time.deltaTime);
-            if (transform.position.z < 0)
+            playerCurPos = transform.position;
+            if (Vector3.Distance(playerStartPos, playerCurPos) > pullBackAmmount)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+                fireing = false;
             }
+
+            //if (transform.position.z < 0)
+            //{
+            //    transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+            //}
         }
 
         if (canThrow && package != null && !IsGrounded())
