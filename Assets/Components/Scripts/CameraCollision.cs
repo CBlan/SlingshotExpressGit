@@ -27,7 +27,7 @@ public class CameraCollision : MonoBehaviour
 
         if (!playerCollision)
         {
-            if (collision.gameObject.transform.tag != "Target" && collision.gameObject.transform.tag != "Ground" && collision.gameObject.transform.tag != "Package")
+            if (collision.gameObject.transform.tag != "Target" && collision.gameObject.transform.tag != "Ground" && collision.gameObject.transform.tag != "Package" && collision.gameObject.transform.tag != "SafeGround")
             {
                 playerCollision = true;
                 rend.enabled = false;
@@ -51,8 +51,6 @@ public class CameraCollision : MonoBehaviour
                     collision.gameObject.transform.parent.gameObject.SetActive(false);
                     GameManager.GM.scoreManager.PackageDelivered();
                 }
-
-                
             }
         }
 
