@@ -34,8 +34,9 @@ public class CameraCollision : MonoBehaviour
                 colPoint = collision.contacts[0].point;
                 Instantiate(blood, colPoint, Quaternion.identity);
                 Instantiate(hitParticle[Random.Range(0,2)], new Vector3(colPoint.x, colPoint.y, colPoint.z -2), Quaternion.identity);
-                GameManager.GM.soundManager.PlayAndDestroy(impactClips[Random.Range(0, 9)], transform.position);
-                GameManager.GM.soundManager.PlayAndDestroy(squelchClips[Random.Range(0, 2)], transform.position);
+                //GameManager.GM.soundManager.PlayAndDestroy(impactClips[Random.Range(0, 9)], transform.position);
+                //GameManager.GM.soundManager.PlayAndDestroy(squelchClips[Random.Range(0, 2)], transform.position);
+                Fabric.EventManager.Instance.PostEvent("Player/Impact", gameObject);
                 Instantiate(bloodProjectors[Random.Range(0,2)], new Vector3(colPoint.x, colPoint.y, colPoint.z - 5), Quaternion.LookRotation(colPoint));
                 GameManager.GM.scoreManager.FailedTask(hospitalBill);
             }
